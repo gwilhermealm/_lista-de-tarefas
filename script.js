@@ -5,13 +5,27 @@ const textinput = document.getElementById('inputtext');
 const btnadicionar = document.getElementById('adc');
 const btnlimpar = document.getElementById('limpar')
 const btnpersonalizar = document.getElementById('btnpersonalizar')
+const main = document.getElementById('main')
+
 //customizar bloco de notas
-btnpersonalizar.addEventListener("click",()=>{
-   
-    let opcao = prompt("personalizar bloco de tarefas:\n digite o numero da cor desejada:\n 1⚪ 2🟣 3🟢 ")
 
-
-})
+btnpersonalizar.addEventListener("click", () => {
+    const mainElement = document.getElementById('main');
+    const opcao = prompt("personalizar bloco de tarefas:\nDigite o número da cor desejada:\n 1⚪ Branco\n 2🟣 Roxo\n 3🟢 Verde");
+    if (!opcao) return;
+    const valor = opcao.trim();
+    if (valor === "1") {
+        mainElement.style.backgroundColor = "#fff";
+    } else if (valor === "2") {
+        mainElement.style.backgroundColor = "#A280DB";
+    } else if (valor === "3") {
+        mainElement.style.backgroundColor = "#90EE90";
+    } else {
+        alert("Opção inválida!");
+    }
+    // Força o repaint
+    mainElement.offsetHeight;
+});
 
 
 
