@@ -4,6 +4,26 @@ const lista = document.getElementById('lista-tarefas');
 const textinput = document.getElementById('inputtext');
 const btnadicionar = document.getElementById('adc');
 const btnlimpar = document.getElementById('limpar')
+const btnpersonalizar = document.getElementById('btnpersonalizar')
+//customizar bloco de notas
+btnpersonalizar.addEventListener("click",()=>{
+   
+    let opcao = prompt("personalizar bloco de tarefas:\n digite o numero da cor desejada:\n 1⚪ 2🟣 3🟢 ")
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Adicionando nova tarefa
 btnadicionar.addEventListener("click", () => {
