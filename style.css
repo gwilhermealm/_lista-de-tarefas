@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+:root{
+
+    --cor1:#FDE770;
+    --cor2:#07B5FE;
+    --cor3:#FF60A2;
+    --cor4:#A280DB;
+}
+
+
+
+*{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url('imagens/backgroud-body.jpeg');
+        background-position: center;
+        height: 100vh;
+       background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1{
+      text-align: center;
+      margin-top: 0;
+    }
+    main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        border: 2px solid grey;
+        padding: 80px;
+        background-color: #FDDF6E;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+    }
+    input{
+       padding-top: 2px;
+       padding-bottom: 2px;
+    }
+    h2{
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    ol{
+        margin-top: 20px;
+    }
+    li{
+        margin-top: 10px;
+        font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid rgb(34, 32, 32);
+         
+    }
+    #adc{
+        background-color: var(--cor4);
+        border: 1px solid;
+        padding: 2px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+
+    }
+    .editar{
+        background-color: var(--cor2);
+        border: 1px solid;
+        padding: 2px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+        margin-left: 120px;
+
+        
+    }
+    .concluir{
+       background-color: var(--cor4);
+         border: 1px solid;
+        padding: 2px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+
+
+    }
+    .limpar{
+        background-color: var(--cor3);
+         border: 1px solid;
+         padding: 2px;
+         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+    }
+    .apagar{
+        background-color: var(--cor3);
+        border: 1px solid;
+        padding: 2px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+
+    }
+    
+    button{
+        margin-left: 5px;
+        padding: 3px;
+        border-radius: 4px;
+        border: 1px solid;
+        padding: 2px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+        transition: 0.4s;
+    }
+    button:hover{
+        background-color: white;
+        scale: 1.2;
+    }
+
+  /*alteraçoes para telas menore  */
+ @media(max-width:900px) {
+    main{
+        padding: 30px;
+        width: 300px;
+    }
+   .editar{
+    margin-left: 100px;
+   }
+   
+ }
